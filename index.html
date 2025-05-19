@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para mi princesa👑💗</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="slider"></div>
+
+  <div class="container">
+    <h1>Para mi niña, en el Día de las Cartas</h1>
+    <p>
+      MI REINA HERMOSA:<br><br>
+      Hoy, 20 de mayo, quiero aprovechar el Día de las Cartas para recordarte cuánto te amo. Eres la luz de mis días, la calma en mis noches, y la razón por la que sonrío incluso en los momentos más simples.<br><br>
+      Un mensaje tuyo me alegra un día, cada palabra tuya es una melodía que guardo en el corazón. Quiero que sepas que siempre estaré aquí para ti, en los buenos y malos momentos, celebrando tus triunfos, cuidando tus sueños y abrazándote con el alma.<br><br>
+      Esta pequeña "carta" es solo un gesto, pero mi amor por ti es infinito. Gracias por ser tú y amarme como soy yo.
+      perdoname por aveces ser tan molesto, si soy asi es por que realmente me gustas y quiero todo contigo, ese es mi lenguaje de amor, TE AMO MUCHO MAJO💗👑
+    </p>
+    <div class="firma">Con todo mi amor, tu niño titito ♥</div>
+  </div>
+
+  <div class="scrolling-background">
+    <div class="scrolling-images">
+      <img src="img1.jpg" alt="Imagen 1">
+      <img src="img2.jpg" alt="Imagen 2">
+      <img src="img3.jpg" alt="Imagen 3">
+      <img src="img4.jpg" alt="Imagen 4">
+      <img src="img5.jpg" alt="Imagen 5">
+      <img src="img6.jpg" alt="Imagen 6">
+      <img src="img7.jpg" alt="Imagen 7">
+      <img src="img8.jpg" alt="Imagen 8">
+      <img src="img9.jpg" alt="Imagen 9">
+      <img src="img10.jpg" alt="Imagen 10">
+      <img src="img1.jpg" alt="Imagen 1 repetida">
+      <img src="img2.jpg" alt="Imagen 2 repetida">
+      <img src="img3.jpg" alt="Imagen 3 repetida">
+      <img src="img4.jpg" alt="Imagen 4 repetida">
+      <img src="img5.jpg" alt="Imagen 5 repetida">
+      <img src="img6.jpg" alt="Imagen 6 repetida">
+      <img src="img7.jpg" alt="Imagen 7 repetida">
+      <img src="img8.jpg" alt="Imagen 8 repetida">
+      <img src="img9.jpg" alt="Imagen 9 repetida">
+      <img src="img10.jpg" alt="Imagen 10 repetida">
+    </div>
+  </div>
+
+  <div class="corazones"></div>
+
+  <script>
+    const corazones = document.querySelector('.corazones');
+    for (let i = 0; i < 50; i++) {
+      const heart = document.createElement('div');
+      heart.classList.add('corazon');
+      heart.style.left = `${Math.random() * 100}%`;
+      heart.style.animationDuration = `${5 + Math.random() * 5}s`;
+      heart.style.opacity = Math.random();
+      corazones.appendChild(heart);
+    }
+  </script>
+</body>
+</html>
